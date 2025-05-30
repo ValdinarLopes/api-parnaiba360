@@ -12,7 +12,7 @@ class PontoTuristicoController extends Controller
      */
     public function index()
     {
-        //
+        return response()->json(PontoTuristico::all());
     }
 
     /**
@@ -34,9 +34,9 @@ class PontoTuristicoController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(PontoTuristico $pontoTuristico)
+    public function show($id)
     {
-        //
+        return response()->json(PontoTuristico::findOrFail($id));
     }
 
     /**

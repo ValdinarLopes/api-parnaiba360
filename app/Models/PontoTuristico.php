@@ -9,4 +9,6 @@ class PontoTuristico extends Model
 {
     /** @use HasFactory<\Database\Factories\PontoTuristicoFactory> */
     use HasFactory;
+
+    protected $fillable = ['nome', 'descricao', 'latitude', 'longitude', 'imagem'];
 }
