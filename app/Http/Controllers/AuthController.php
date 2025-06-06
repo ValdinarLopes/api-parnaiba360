@@ -28,7 +28,7 @@ class AuthController extends Controller
         return response()->json(['token' => $token], 201);
     }
 
-    public function login(Requst $request)
+    public function login(Request $request)
     {
         $request->validade([
             'email' => 'required|string|email',
